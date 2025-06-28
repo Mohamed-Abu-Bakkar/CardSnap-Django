@@ -1,0 +1,40 @@
+# === PYTHON / DJANGO ===
+*.pyc
+__pycache__/
+*.pyo
+*.pyd
+*.pyc
+*.log
+db.sqlite3
+.env
+*.sqlite3
+media/
+staticfiles/
+instance/
+.vscode/
+
+# Django migrations
+**/migrations/
+!**/migrations/__init__.py
+
+# IDE
+.idea/
+.vscode/
+*.swp
+
+# === FRONTEND (Vite/Node/React) ===
+node_modules/
+dist/
+.env.local
+.env.development
+.env.production
+
+# === OS / SYSTEM FILES ===
+.DS_Store
+Thumbs.db
+*.bak
+*.tmp
+*.orig
+
+# === RENDER OR DEPLOYMENT ===
+render.yaml
