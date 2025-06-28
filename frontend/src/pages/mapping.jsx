@@ -38,7 +38,7 @@ export default function MappingPage() {
     const formData = new FormData();
     formData.append("file", file);
     formData.append("mapping", JSON.stringify(mapping));
-    const res = await axios.post("http://cardsnap.onrender/api/convert/", formData, {
+    const res = await axios.post("/api/convert/", formData, {
       responseType: "text",
     });
     localStorage.setItem("vcfContent", res.data);

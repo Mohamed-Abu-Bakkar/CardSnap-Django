@@ -24,7 +24,7 @@ export default function UploadPage() {
   const handleUpload = async () => {
     const formData = new FormData();
     formData.append("file", file);
-    const res = await axios.post("http://cardsnap.onrender/api/preview-columns/", formData);
+    const res = await axios.post("/api/preview-columns/", formData);
     // Save file and columns to localStorage or pass via navigation state
     localStorage.setItem("uploadedFileName", file.name);
     localStorage.setItem("uploadedFileType", file.type);
